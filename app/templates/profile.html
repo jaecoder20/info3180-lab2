@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block main %}
+<div class="top">
+  <img
+    src="{{ url_for('static',
+    filename='myself.JPG') }}"
+    alt="A passport picture of Rojae Wedderburn"
+  />
+  <h1>Rojae Wedderburn</h1>
+  <p>@jaeburn</p>
+  <p>Kingston, Jamaica</p>
+  <p>Joined On {{dateJoined}}</p>
+</div>
+<div class="bottom">
+  <p>
+    I am a final-year computer science students who loves to solve problems. At
+    the moment I am focused on doing well in my internship and preparing to do
+    an interview with Microsoft, wish me luck!
+  </p>
+  <div class="profile-stats">
+    <div class="posts">
+      <h2 class="amount">23</h2>
+      <p>Posts</p>
+    </div>
+    <div class="following">
+      <h2 class="amount">3498</h2>
+      <p>Following</p>
+    </div>
+    <div class="Followers">
+      <h2 class="amount">23</h2>
+      <p>Followers</p>
+    </div>
+  </div>
+  <button>Follow</button>
+</div>
+{% endblock %}
